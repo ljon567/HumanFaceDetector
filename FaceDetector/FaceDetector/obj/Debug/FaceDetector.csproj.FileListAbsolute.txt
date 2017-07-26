@@ -1,6 +1,8 @@
-C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\FaceDetector.dll
 C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\FaceDetector.dll.config
+C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\FaceDetector.dll
 C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\FaceDetector.pdb
+C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
+C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\Newtonsoft.Json.dll
 C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\Plugin.Media.Abstractions.dll
 C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\Plugin.Media.dll
 C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\System.Net.Http.dll
@@ -9,6 +11,8 @@ C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\System.Net.Http.Primitives.d
 C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\Xamarin.Forms.Core.dll
 C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\Xamarin.Forms.Platform.dll
 C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\Microsoft.WindowsAzure.Mobile.xml
+C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\Newtonsoft.Json.xml
 C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\Plugin.Media.pdb
 C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\Plugin.Media.xml
 C:\FaceDetector\FaceDetector\FaceDetector\bin\Debug\Plugin.Media.Abstractions.pdb

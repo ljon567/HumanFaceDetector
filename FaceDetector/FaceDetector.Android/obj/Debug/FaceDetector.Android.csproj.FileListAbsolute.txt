@@ -5,6 +5,9 @@ C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\com.microsoft.facede
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\com.microsoft.facedetector-Signed.apk
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\FaceDetector.dll
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\FormsViewGroup.dll
+C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
+C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Microsoft.WindowsAzure.Mobile.Ext.dll
+C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Newtonsoft.Json.dll
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.CurrentActivity.dll
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Media.Abstractions.dll
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Media.dll
@@ -36,13 +39,18 @@ C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\FaceDetector.pdb
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\FaceDetector.dll.config
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\FormsViewGroup.pdb
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\FormsViewGroup.dll.mdb
+C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Microsoft.WindowsAzure.Mobile.xml
+C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Microsoft.WindowsAzure.Mobile.Ext.xml
+C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Newtonsoft.Json.xml
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.CurrentActivity.xml
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Media.pdb
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Media.xml
+C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Media.dll.mdb
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Media.Abstractions.pdb
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Media.Abstractions.xml
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Permissions.pdb
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Permissions.xml
+C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Permissions.dll.mdb
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Permissions.Abstractions.pdb
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Permissions.Abstractions.xml
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\System.Net.Http.Extensions.xml
@@ -86,8 +94,6 @@ C:\FaceDetector\FaceDetector\FaceDetector.Android\obj\Debug\res\xml\file_paths.x
 C:\FaceDetector\FaceDetector\FaceDetector.Android\obj\Debug\R.cs.flag
 C:\FaceDetector\FaceDetector\FaceDetector.Android\obj\Debug\uploadflags.txt
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\FaceDetector.dll.mdb
-C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Media.dll.mdb
-C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\Plugin.Permissions.dll.mdb
 C:\FaceDetector\FaceDetector\FaceDetector.Android\bin\Debug\FaceDetector.Android.dll.mdb
 C:\FaceDetector\FaceDetector\FaceDetector.Android\obj\Debug\android\assets\FaceDetector.Android.dll.mdb
 C:\FaceDetector\FaceDetector\FaceDetector.Android\obj\Debug\android\assets\FaceDetector.dll.mdb
