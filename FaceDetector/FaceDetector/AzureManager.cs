@@ -10,12 +10,12 @@ namespace FaceDetector
 
         private static AzureManager instance;
         private MobileServiceClient client;
-        private IMobileServiceTable<stats> statsTable;
+        private IMobileServiceTable<stats> statsTable; //Used for history display on AzureTable tab
 
         private AzureManager()
         {
             this.client = new MobileServiceClient("http://ljon567.azurewebsites.net/");
-            this.statsTable = this.client.GetTable<stats>();
+            this.statsTable = this.client.GetTable<stats>(); //Get contents of database
         }
 
         public async Task<List<stats>> GetStatsInformation()
@@ -41,19 +41,16 @@ namespace FaceDetector
             }
         }
 
-        public async Task PostStatsInformation(stats statsInfo)
+        public async Task PostStatsInformation(stats statsInfo) 
         {
             await this.statsTable.InsertAsync(statsInfo);
         }
 
-        public async Task UpdateStatsInformation(stats statsInfo)
-        {
-            await this.statsTable.UpdateAsync(statsInfo);
-        }
-
+        //Clear all entries from database
         public async Task DeleteStatsInformation(stats statsInfo)
         {
             await this.statsTable.DeleteAsync(statsInfo);
         }
+
     }
 }

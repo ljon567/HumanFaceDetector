@@ -10,7 +10,6 @@ using Plugin.Media;
 using Plugin.Media.Abstractions;
 using FaceDetector.Model;
 using Xamarin.Forms;
-using Newtonsoft.Json.Linq;
 using FaceDetector.DataModels;
 
 namespace FaceDetector
@@ -22,7 +21,7 @@ namespace FaceDetector
             InitializeComponent();
         }
 
-        private async void loadCamera(object sender, EventArgs e)
+        private async void loadCamera(object sender, EventArgs e) 
         {
             await CrossMedia.Current.Initialize();
 
@@ -50,6 +49,7 @@ namespace FaceDetector
             await MakePredictionRequest(file);
         }
 
+        //Convert image file into format that can be utilized by the A.I
         static byte[] GetImageAsByteArray(MediaFile file)
         {
             var stream = file.GetStream();
@@ -60,8 +60,10 @@ namespace FaceDetector
         async Task MakePredictionRequest(MediaFile file)
         {
             Contract.Ensures(Contract.Result<Task>() != null);
+
             var client = new HttpClient();
 
+            //The following key and url taken from customvision.ai
             client.DefaultRequestHeaders.Add("Prediction-Key", "2470ae283d364813a0e2854a5d09e524");
 
             string url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v1.0/Prediction/01bcff2d-5c19-4177-9a46-f4a137226ce7/image?iterationId=6fc16337-2cc3-4fd0-b4de-b6fa682c693f";
@@ -72,45 +74,32 @@ namespace FaceDetector
 
             using (var content = new ByteArrayContent(byteData))
             {
-
                 content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
-                response = await client.PostAsync(url, content);
 
+                response = await client.PostAsync(url, content);
 
                 if (response.IsSuccessStatusCode)
                 {
                     var responseString = await response.Content.ReadAsStringAsync();
 
-                    /*JObject rss = JObject.Parse(responseString);
-
-                    var Probability = from p in rss["Predictions"] select (string)p["Probability"];
-                    var Tag = from p in rss["Predictions"] select (string)p["Tag"];
-
-                    foreach (var item in Tag)
-                    {
-                        TagLabel.Text += item + ": \n";
-                    }
-
-                    foreach (var item in Probability)
-                    {
-                        PredictionLabel.Text += item + ": \n";
-                    }*/
+                    //Put contents of responseString into table
                     EvaluationModel responseModel = JsonConvert.DeserializeObject<EvaluationModel>(responseString);
 
-                    double max = responseModel.Predictions.Max(m => m.Probability);
+                    double max = responseModel.Predictions.Max(m => m.Probability); //Probability of humanity value
 
                     stats model = new stats()
                     {
                         Probability = (float)max
                     };
 
-                    await AzureManager.AzureManagerInstance.PostStatsInformation(model);
+                    //Update Azure database/table with new entry
+                    await AzureManager.AzureManagerInstance.PostStatsInformation(model); 
 
+                    //Final result based on whether face has at least fifty percent chance of being human
                     TagLabel.Text = (max >= 0.5) ? "Humanity confirmed" : "Humanity questionable";
 
                 }
 
-                //Get rid of file once we have finished using it
                 file.Dispose();
             }
         }

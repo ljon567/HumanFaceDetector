@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace FaceDetector.Model
 {
+    //Used to hold information going to and coming from database 
     public class EvaluationModel
     {
         public string Id { get; set; }

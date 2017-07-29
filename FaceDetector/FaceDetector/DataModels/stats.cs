@@ -4,6 +4,7 @@ namespace FaceDetector.DataModels
 {
     public class stats
     {
+        //Holds probability of humanity and unique ID number for each entry 
         [JsonProperty(PropertyName = "ID")]
         public string ID { get; set; }
 

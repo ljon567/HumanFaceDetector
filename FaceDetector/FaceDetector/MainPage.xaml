@@ -4,10 +4,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:local="clr-namespace:FaceDetector" 
     x:Class="FaceDetector.MainPage">
-    <NavigationPage Title="Information">
+    <NavigationPage Title="Face Scanner">
         <x:Arguments>
-            <local:AzureTable />
+            <local:CustomVision />
         </x:Arguments>
     </NavigationPage>
-    <local:CustomVision />
+    <local:AzureTable />
 </TabbedPage>

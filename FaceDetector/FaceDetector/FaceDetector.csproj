@@ -47,7 +47,6 @@
     <Compile Include="CustomVision.xaml.cs">
       <DependentUpon>CustomVision.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Grid1.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
