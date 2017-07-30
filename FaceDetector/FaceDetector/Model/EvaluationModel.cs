@@ -16,6 +16,7 @@ namespace FaceDetector.Model
     {
         public string TagId { get; set; }
         public string Tag { get; set; }
+        public string createdAt { get; set; }
         public double Probability { get; set; }
     }
 }

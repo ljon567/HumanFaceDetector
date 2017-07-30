@@ -8,6 +8,9 @@ namespace FaceDetector.DataModels
         [JsonProperty(PropertyName = "ID")]
         public string ID { get; set; }
 
+        [JsonProperty(PropertyName = "createdAt")]
+        public string createdAt { get; set; }
+
         [JsonProperty(PropertyName = "Probability")]
         public float Probability { get; set; }
     }

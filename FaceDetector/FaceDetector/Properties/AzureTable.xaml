@@ -11,7 +11,8 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding Probability, StringFormat='Probability: {0:N}'}" HorizontalOptions="FillAndExpand" Margin="20,0,0,0" VerticalTextAlignment="Center" />
+                                <Label Text ="{Binding createdAt, StringFormat='{0:N}'}" HorizontalOptions="StartAndExpand" Margin="20,0,0,0" VerticalTextAlignment="Start" />
+                                <Label Text ="{Binding Probability, StringFormat='Probability: {0:N}'}" HorizontalOptions="StartAndExpand" Margin="20,0,0,0" VerticalTextAlignment="Center" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

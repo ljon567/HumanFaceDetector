@@ -96,7 +96,7 @@ namespace FaceDetector
                     await AzureManager.AzureManagerInstance.PostStatsInformation(model); 
 
                     //Final result based on whether face has at least fifty percent chance of being human
-                    TagLabel.Text = (max >= 0.5) ? "Humanity confirmed" : "Humanity questionable";
+                    TagLabel.Text = (max >= 0.5) ? "Humanity confirmed with probability of " + max : "Humanity questionable with probability of " + max;
 
                 }
 
